@@ -3,7 +3,7 @@ def my_collect(grouping)
   new_group = [ ]
   while i < grouping.length
     yield(grouping[i])
-    new_group << yield([i]).upcase
+    new_group << yield(grouping[i]).upcase
     i+=1
   end
   new_group
